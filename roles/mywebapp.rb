@@ -1,5 +1,5 @@
 name "mywebapp"
-description "a simple role to demonstrate chef at DevOps Camp"
+description "a small webapplication role"
 
 run_list(
   "recipe[apt]",
