@@ -49,7 +49,16 @@ package "php5-mysql" do
   action :install
 end
 
-package "php-apc" do
+# needed to install PEAR/PECL extension manually
+include_recipe "build-essential::default"
+
+package "libpcre3-dev" do
+  action :install
+end
+
+php_pear "apc" do
+  version "3.1.13"
+  directives(:shm_size => "256M", :enable_cli => 0)
   action :install
 end
 
