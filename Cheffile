@@ -5,7 +5,6 @@ site 'http://community.opscode.com/api/v1'
 
 cookbook 'apt'
 cookbook 'apache2'
-cookbook 'build-essential'
 cookbook 'database'
 cookbook 'php'
 cookbook 'mysql'
