@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: mywebapp
+# Cookbook Name:: drupal
 # Recipe:: default
 # Author:: Markus Heurung <markus@freistil.it>
 #
