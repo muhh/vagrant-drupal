@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: mywebapp
+# Cookbook Name:: drupal
 # Recipe:: apache2
 # Author:: Markus Heurung <markus@freistil.it>
 #
@@ -37,7 +37,7 @@ end
 # Configure Apache
 #
 
-template "#{node['apache']['dir']}/sites-available/mywebapp" do
+template "#{node['apache']['dir']}/sites-available/drupal" do
   source "apache2/vhost.conf.erb"
   owner "root"
   group "root"
@@ -49,4 +49,4 @@ template "#{node['apache']['dir']}/sites-available/mywebapp" do
   notifies :reload, "service[apache2]"
 end
 
-apache_site "mywebapp"
+apache_site "drupal"

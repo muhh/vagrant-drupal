@@ -1,11 +1,11 @@
-mywebapp CHANGELOG
+Drupal CHANGELOG
 ==================
 
-This file is used to list changes made in each version of the mywebapp cookbook.
+This file is used to list changes made in each version of the Drupal cookbook.
 
 0.1.0
 -----
-- [your_name] - Initial release of mywebapp
+- [your_name] - Initial release of Drupal
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

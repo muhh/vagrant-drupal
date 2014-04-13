@@ -1,4 +1,4 @@
-mywebapp Cookbook
+Drupal Cookbook
 =================
 TODO: Enter the cookbook description here.
 
@@ -11,14 +11,14 @@ TODO: List your cookbook requirements. Be sure to include any requirements this 
 
 e.g.
 #### packages
-- `toaster` - mywebapp needs toaster to brown your bagel.
+- `toaster` - drupal needs toaster to brown your bagel.
 
 Attributes
 ----------
 TODO: List your cookbook attributes here.
 
 e.g.
-#### mywebapp::default
+#### drupal::default
 <table>
   <tr>
     <th>Key</th>
@@ -27,7 +27,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['mywebapp']['bacon']</tt></td>
+    <td><tt>['drupal']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -36,17 +36,17 @@ e.g.
 
 Usage
 -----
-#### mywebapp::default
+#### drupal::default
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `mywebapp` in your node's `run_list`:
+Just include `drupal` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[mywebapp]"
+    "recipe[drupal]"
   ]
 }
 ```

@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: mywebapp
+# Cookbook Name:: drupal
 # Recipe:: mysql
 # Author:: Markus Heurung <markus@freistil.it>
 #
@@ -28,8 +28,8 @@ mysql_connection_info = {
   :password => node['mysql']['server_root_password']
 }
 
-if node[:mywebapp][:databases] && !node[:mywebapp][:databases].empty?
-  node[:mywebapp][:databases].each do |db, dbconfig|
+if node[:drupal][:databases] && !node[:drupal][:databases].empty?
+  node[:drupal][:databases].each do |db, dbconfig|
     # Create application database
     mysql_database db do
       connection    mysql_connection_info

@@ -23,18 +23,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision "chef_solo" do |chef|
-    chef.node_name = "mywebapp"
+    chef.node_name = "drupal"
     chef.cookbooks_path = [ "cookbooks", "vendor/cookbooks" ]
     chef.roles_path = "roles"
-    chef.add_role("mywebapp")
+    chef.add_role("drupal")
 
     chef.json = {
-      :mywebapp => {
+      :drupal => {
         :databases =>  {
-          :foo => {
-            :username => "foo",
-            :password => "bar"
-          },
           :drupal => {
             :username => "drupal",
             :password => "rocks"
